@@ -1,7 +1,9 @@
 /* Imported work sans google sans */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
-/* shared styles  */
+/*-------------------------------------
+shared styles
+---------------------------------------*/
 * {
   font-family: 'Work Sans', sans-serif;
 }
@@ -17,7 +19,9 @@
   cursor: pointer;
 }
 
-/* nav styles */
+/*-------------------------------------
+nav styles
+---------------------------------------*/
 header {
   background: rgba(255, 144, 14, 0.10);
   padding: 50px 240px;
@@ -53,9 +57,11 @@ nav li a {
 
 
 
-/* banner styles  */
+/*-------------------------------------
+banner styles
+---------------------------------------*/
 .banner {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -83,8 +89,49 @@ nav li a {
 }
 
 
-/* responsive styles  */
-/* small device  */
+/*-------------------------------------
+main styles
+---------------------------------------*/
+main {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/*-------------------------------------
+team section styles
+---------------------------------------*/
+.teams-container {
+  display: flex;
+  align-items: center;
+}
+
+.teams-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.teams-title{
+  font-size: 2.8rem;
+}
+
+.teams-title .quick-list{
+  color: #727272;
+  font-weight: 500;
+}
+
+.teams-title .text-features{
+  color: #FF900E;
+  font-weight: 700;
+}
+
+/* responsive styles */
+
+/*-------------------------------------
+small devices
+--------------------------------------*/
 @media screen and (max-width:576px) {
   header {
     padding: 20px;
@@ -103,7 +150,9 @@ nav li a {
   }
 }
 
-/* medium device  */
+/*-------------------------------------
+medium devices
+---------------------------------------*/
 @media screen and (min-width:576px) and (max-width:960px) {
   header {
     padding: 20px;
